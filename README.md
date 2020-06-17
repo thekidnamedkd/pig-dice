@@ -17,7 +17,15 @@ If user 1 hits the "roll" button the program will return a randomized number 1-6
   * input: "roll" click
   * output: 5
 
-If user 1 hits the "hold" button the program will store that current number to the user's "score" column.
+If user 1 does not roll a 1 and hits the "roll" button again, the progam will continue to return a randomized number 1-6 to the user and add all numbers 2-6 to the user's "turn total".
+  * input: "roll" click
+  * output: 4 (5+4=9)
+
+If either user rolls a 1, that user will automatically "hold" the value of 0 to their score column and ends turn.
+  * input: "roll" click yields 1
+  * output: 0 to score column of user
+
+If user 1 hits the "hold" button having not ever rolled a 1 the program will store that current "turn total" to the user's "total score" column.
   * input: "hold" click
   * output: 5 in user 1 column
 
@@ -29,9 +37,7 @@ If user 2 hits the "hold" button the program will store that current number to t
   * input: "hold" click
   * output: 3
 
-If either user rolls a 1, that user automatically "holds" the value of 0 to their score column and ends turn.
-  * input: "roll" click yields 1
-  * output: 0 to score column of user
+
 
 As turns rotate and users hold dice returns, those number values for each hold add together in the user's score column.
   * input: 3 + 5 + 6
