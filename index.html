@@ -12,32 +12,30 @@
 <body>
     <form id="gameboard">
       <header class="h1">Pig Dice</header>
-      <div class="split left">
+      <div class="split left" id="player1">
         <div class="centered">
         <h2>Player 1</h2>
         <hr>
         <form id="player-one">
-          <div id="player1">
           <p>Dice Output: <span class="p1-dice-output"></span></p>
-          <p>Turn Score:<span class="p1-temp-score"></span></p>
-          <button type="submit" id="btn-roll" class="btn btn-warning">Roll</button>
-          <button type="submit" id="btn-hold" class="btn btn-warning">Hold</button>
+          <p>Turn Score: <strong><span class="p1-temp-score"></span></strong></p>
+          <button type="button" id="roll1" class="btn btn-warning">Roll</button>
+          <button id="hold1" class="btn btn-warning">Hold</button>
           <p>Total Score:<span class="p1-total-score"></span><p>
-        </div>
+        </form>
         </div>
       </div>
-      <div class="split right">
+      <div class="split right" id="player2">
         <div class="centered">
         <h2>Player 2</h2>
         <hr>
         <form id="player-two">
-          <div id="player2">
           <p>Dice Output: <span class="p2-dice-output"></span></p>
-          <p>Turn Score:<span class="p2-temp-score"></span></p>
-          <button type="submit" id="btn-roll" class="btn btn-warning">Roll</button>
-          <button type="submit" id="btn-hold" class="btn btn-warning">Hold</button>
+          <p>Turn Score: <strong><span class="p2-temp-score"></span></p></strong>
+          <button type="button" id="roll2" class="btn btn-warning">Roll</button>
+          <button id="hold2" class="btn btn-warning">Hold</button>
           <p>Total Score:</label><span class="p2-total-score"></span><p></p>
-        </div>
+        </form>
         </div>
       </div>
     </div>
