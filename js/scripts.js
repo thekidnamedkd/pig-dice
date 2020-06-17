@@ -1,29 +1,23 @@
 //business logic for game objects
-function Gameboard(player1, player2) {
-  this.player1 = player1;
-  this.player2 = player2;
-}
-
-function Player1(diceRoll) {
-  this.totalScore = totalScore;
-  this.diceRoll = diceRoll;
-}
-
-function Player2(diceRoll) {
-  this.diceRoll = diceRoll
+function Player() {
+  this.turnScore = 0;
+  this.totalScore = 0;
+  this.player = ""
 }
 
 // business logic for player object
-
-Player1.prototype.diceRoll = function(amount) {
-  this.initialDeposit += amount;
+Player.prototype.rollDice = function() {
+  let dice = Math.floor(Math.random() * 7) + 1;
+  this.turnScore += dice
 }
 
 
-function diceRoll (number) {
-  Math.floor(Math.random() * 7) + 1; 
-}
+// User Interface --
 
+let player1 = Player()
+let player2 = Player()
+
+//UI Logic
 $(document).ready(function() {
 event.preventDefault();
 })
