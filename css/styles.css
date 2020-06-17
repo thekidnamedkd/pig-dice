@@ -2,10 +2,10 @@
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: 1;
-  top: 0;
+  z-index: 0;
+  top: 100px;
   overflow-x: hidden;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .left {
@@ -25,3 +25,9 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.h1 {
+  column-span: all;
+  text-align: center;
+}
+

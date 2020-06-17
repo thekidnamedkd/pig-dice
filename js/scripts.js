@@ -5,19 +5,20 @@ function Player() {
   this.player = ""
 }
 
+
 // business logic for player object
-Player.prototype.rollDice = function() {
+Player.prototype.rollDice = function(dice) {
   let dice = Math.floor(Math.random() * 7) + 1;
   this.turnScore += dice
+  console.log(dice)
 }
 
-
 // User Interface --
-
-let player1 = Player()
-let player2 = Player()
-
-//UI Logic
 $(document).ready(function() {
-event.preventDefault();
-})
+  $("form#gameboard").submit(function(event) {
+    event.preventDefault();
+    let player1 = new Player()
+    let player2 = new Player()
+
+
+}})

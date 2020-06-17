@@ -10,36 +10,35 @@
   <title>Pig Dice</title>
 </head>
 <body>
-  <div class="row">
     <form id="gameboard">
-      <div class="column">
+      <header class="h1">Pig Dice</header>
+      <div class="split left">
+        <div class="centered">
         <h2>Player 1</h2>
         <hr>
-        <div class="form-group">
-            <label for="p1-turn-score">Turn Score:</label>
-            <label for="p1-total-score">Total Score:</label>
-          </div>
-          <button type="submit" class="btn">Roll</button>
-          <button type="submit" class="btn">Hold</button>
-          </div>
-        <div class="column">
-            <h1>Pig Dice</h1>
-            <hr>
-            <div class="form-group">
-              <label for="p2-turn-score">Turn Score:</label>
-              <label for="p2-total-score">Total Score:</label>
-            </div>
-            <button type="submit" class="btn">Roll</button>
-            <button type="submit" class="btn">Hold</button>
-      <div class="column">
+        <form id="player-one">
+          <div id="player1">
+          <p>Dice Output: <span class="p1-dice-output"></span></p>
+          <p>Turn Score:<span class="p1-temp-score"></span></p>
+          <button type="submit" id="btn-roll" class="btn btn-warning">Roll</button>
+          <button type="submit" id="btn-hold" class="btn btn-warning">Hold</button>
+          <p>Total Score:<span class="p1-total-score"></span><p>
+        </div>
+        </div>
+      </div>
+      <div class="split right">
+        <div class="centered">
         <h2>Player 2</h2>
         <hr>
-        <div class="form-group">
-          <label for="p2-turn-score">Turn Score:</label>
-          <label for="p2-total-score">Total Score:</label>
+        <form id="player-two">
+          <div id="player2">
+          <p>Dice Output: <span class="p2-dice-output"></span></p>
+          <p>Turn Score:<span class="p2-temp-score"></span></p>
+          <button type="submit" id="btn-roll" class="btn btn-warning">Roll</button>
+          <button type="submit" id="btn-hold" class="btn btn-warning">Hold</button>
+          <p>Total Score:</label><span class="p2-total-score"></span><p></p>
         </div>
-        <button type="submit" class="btn">Roll</button>
-        <button type="submit" class="btn">Hold</button>
+        </div>
       </div>
     </div>
   </div>
