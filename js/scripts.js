@@ -2,10 +2,9 @@
 function Player() {
   this.turnScore = 0;
   this.totalScore = 0;
-  this.dice = 0;
 }
 
-// business logic for player object
+//business logic for player object
 Player.prototype.rollDice = function() {
   let dice = Math.floor(Math.random() * 6) + 1;
   if (dice === 1) {
