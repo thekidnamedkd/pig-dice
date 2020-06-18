@@ -7,21 +7,27 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Pig Dice</title>
+  <title>PIG DICE</title>
 </head>
 <body>
     <form id="gameboard">
-      <header class="h1">Pig Dice</header>
+      <header class="h1">PIG DICE</header>
+      <p class="rules">Rules: Roll the die repeatedly to accumulate as many points as possible. However, beware! If you roll a 1, your turn is over and any points you accumulated during your turn will be forfeited. The first player to make it to 100 wins!</p>
+      <button type="button" id="reload" class="btn btn-warning">Start New Game</button>
       <div class="split left" id="player1">
         <div class="centered">
         <h2>Player 1</h2>
         <hr>
         <form id="player-one">
-          <p>Dice Output: <span class="p1-dice-output"></span></p>
+          <p>Dice Output: <strong><span class="p1-dice-output"></span></strong></p>
           <p>Turn Score: <strong><span class="p1-temp-score"></span></strong></p>
           <button type="button" id="roll1" class="btn btn-warning">Roll</button>
           <button type="button" id="hold1" class="btn btn-warning">Hold</button>
-          <p>Total Score:<span class="p1-total-score"></span><p>
+          <br>
+          <br>
+          <p>Total Score: <strong><span class="p1-total-score"></span><p></strong>
+          <div class="victory" id="p1win"><strong>Player 1 Wins!</strong><br>
+          <img class="winner" src="img/clapping.gif" max-width=150px></div>
         </form>
         </div>
       </div>
@@ -30,11 +36,15 @@
         <h2>Player 2</h2>
         <hr>
         <form id="player-two">
-          <p>Dice Output: <span class="p2-dice-output"></span></p>
+          <p>Dice Output: <strong><span class="p2-dice-output"></span></strong></p>
           <p>Turn Score: <strong><span class="p2-temp-score"></span></p></strong>
           <button type="button" id="roll2" class="btn btn-warning">Roll</button>
           <button type="button" id="hold2" class="btn btn-warning">Hold</button>
-          <p>Total Score:</label><span class="p2-total-score"></span><p></p>
+          <br>
+          <br>
+          <p>Total Score: <strong><span class="p2-total-score"></span></strong></p>
+          <div class="victory" id="p2win"><strong>Player 2 Wins!</strong><br>
+          <img class="winner" src="img/clapping.gif" max-width=150px></div>
         </form>
         </div>
       </div>

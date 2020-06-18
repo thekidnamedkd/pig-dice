@@ -2,10 +2,7 @@
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: 0;
-  top: 100px;
-  overflow-x: hidden;
-  padding-top: 20px;
+  padding: 5%;
 }
 
 .left {
@@ -19,8 +16,8 @@
 }
 
 .centered {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -29,5 +26,39 @@
 .h1 {
   column-span: all;
   text-align: center;
+}
+
+.rules {
+  padding: 25px 50px 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#reload {
+  column-span: all;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+} 
+
+#p1win {
+  display: none;
+  color: rgba(255, 187, 0, 0.993);
+  font-size: 30px;
+}
+
+#p2win {
+  display: none;
+  color: rgba(255, 187, 0, 0.993);
+  font-size: 30px;
+}
+
+.winner {
+  max-width: 150px;
+  max-height: 150px;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
 }
 
